@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dhurandhar</title>
+
+    <style>
+        button {
+            background-color: var(--blood-red);
+            color: white;
+            border: none;
+            padding: 18px 45px;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            margin-top: 25px;
+            box-shadow: 0 4px 15px rgba(179, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background-color: #ff0000;
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+            letter-spacing: 6px;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.3),
+                    transparent);
+            transition: 0.6s;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+
+        :root {
+            --blood-red: #b30000;
+            --dark-bg: #0a0a0a;
+            --gold: #c5a059;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--dark-bg);
+            color: #fff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+
+        .logo {
+            font-size: 18px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--blood-red);
+            text-shadow: 0 0 10px rgba(179, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-shadow: 0 0 8px #fff;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 56.25vw;
+            min-height: 100vh;
+            min-width: 177.77vh;
+            transform: translate(-50%, -50%);
+            z-index: -2;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 100%);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 15px;
+            margin-bottom: 10px;
+            background: linear-gradient(to bottom, #fff 40%, #555 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.8));
+        }
+
+        .hero p {
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: var(--blood-red);
+            font-weight: bold;
+        }
+
+        .section-title {
+            text-align: center;
+            padding-top: 60px;
+            letter-spacing: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 60px 20px;
+        }
+
+        .card {
+            width: 300px;
+            height: 300px;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #333;
+            transition: 0.5s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            border-color: var(--blood-red);
+            box-shadow: 0 0 30px rgba(179, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(40%) contrast(1.2);
+            transition: 0.5s;
+        }
+
+        .card:hover img {
+            filter: grayscale(0%) contrast(1);
+        }
+
+        footer {
+            background: #000;
+            color: #444;
+            text-align: center;
+            padding: 60px;
+            letter-spacing: 10px;
+            font-weight: 900;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        button+button {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="logo">LADIES AND GENTLEMEN U R NOT READY FOR THIS</div>
+        <iframe src="https://cdn.123telugu.com/content/wp-content/uploads/2025/11/Dhurandhar-1.webp" frameborder="30">
+        </iframe>
+        <form action="music.html" <div class="hero-box">
+            <h1>Discover the best songs</h1>
+            <h1>of</h1>
+            <button>DHURANDHAR</button>
+        </form>
+        <form action="music2.html">
+            <div>
+            <button>DHURANDHAR THE REVENGE</button>
+        </form>
+    </section>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <img
+                src="https://images.news18.com/ibnlive/uploads/2025/11/Dhurandhar-Trailer-1-2025-11-40a241388a149c13d4e3b42f9a264d2d.jpg">
+        </div>
+
+        <div class="card">
+            <img
+                src="https://assets.gqindia.com/photos/69369eead06e3adf075fa906/16:9/w_2560%2Cc_limit/Dhurandhar-OTT-release.jpg">
+        </div>
+
+        <div class="card">
+            <img
+                src="https://m.media-amazon.com/images/M/MV5BYTEyYWNjMjctYWUwNC00OTA0LTgxNjYtNTMyZDY5MGNmODI1XkEyXkFqcGc@._V1_.jpg">
+        </div>
+
+        <div class="card">
+            <img src="https://enews.hamariweb.com/wp-content/uploads/2025/11/image-27-1024x592.png">
+        </div>
+
+        <div class="card">
+            <img src="https://images.timesnownews.com/photo/msid-153481300/153481300.jpg">
+        </div>
+    </section>
+
+    <footer>
+        GET READY !!!
+    </footer>
+
+</body>
+
+</html>
