@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhurandhar Music Player</title>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-image: linear-gradient(rgba(8, 7, 7, 0.7), rgba(0, 0, 0, 0.9)),
+                url(https://images.filmibeat.com/img/popcorn/list_items/dhurandhar-the-revenge-teaser-out-release-date-cast-story-and-more-about-the-blockbuster-sequel-20260203123731-664.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: #ff0000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ff0000;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .video-container {
+            width: 150%;
+            max-width: 450px;
+            margin-bottom: 20px;
+            background: #000;
+            border: 2px solid #ff0000;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            display: block;
+            border: none;
+        }
+
+        .now-playing {
+            padding: 8px;
+            font-size: 0.9rem;
+            text-align: center;
+            background: rgba(255, 0, 0, 0.2);
+            font-weight: bold;
+            color: #fff;
+        }
+
+        table {
+            width: 95%;
+            max-width: 600px;
+            font-size: 0.85rem;
+            background: rgba(20, 20, 20, 0.95);
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #333;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #ff0000;
+        }
+
+        .play-btn {
+            color: #ffffff;
+            background-color: #b30000;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .play-btn:hover {
+            background-color: #ff0000;
+            box-shadow: 0 0 10px #ff0000;
+        }
+
+        td:last-child {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ALL SONGS OF DHURANDHAR 2</h1>
+
+    <div class="video-container">
+        <div class="now-playing" id="videoTitle">Ready to Play</div>
+        <iframe id="mainPlayer" src="" allow="autoplay" allowfullscreen></iframe>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SONG NAME</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>JAAN SE GUZARTE HAIN</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/1lHeWGfLqwC9R_wZskBtPBKsJL5naGKE9/preview', 'JAAN SE GUZARTE HAIN')">PLAY NOW</button></td>
+            </tr>
+            <tr>
+                <td>AARI AARI</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/1B45p1ChX1cJTUkyb2xiQQ2Mz7FsiGvKR/preview', 'AARI AARI')">PLAY NOW</button></td>
+            </tr>
+            <tr>
+                <td>HUM PYAAR KARNE WALE HAIN</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/1FtgiiMQWQbmmOCASob8YneAkjdQXwH3A/preview', 'HUM PYAAR KARNE WALE HAIN')">PLAY NOW</button></td>
+            </tr>
+            <tr>
+                <td>JAIYE SAJNA</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/1iOJlNX6q76io334DO5wxWJZGQBpB2GrF/preview', 'JAIYE SAJNA')">PLAY NOW</button></td>
+            </tr>
+            <tr>
+                <td>MAIN AUR TU</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/12Iin6Qj_HuyhyfWLNy9XLQ-jGcfu5oC8/preview', 'MAIN AUR TU')">PLAY NOW</button></td>
+            </tr>
+            <tr>
+                <td>TERE ISQ NE</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/1egKh_J9g-px0nExNaJvvBNprPvhMT1sk/preview', 'TERE ISHQ NE')">PLAY NOW</button></td>
+            </tr>
+            <tr>
+                <td>NI MAIN VAARI</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/1ryxXTBBlLU2N2huoLowZxlvihPnKVzC3/preview', 'NI MAIN VAARI')">PLAY NOW</button></td>
+            </tr>
+            <tr>
+                <td>DESTINY-MAAN ATKEYA</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/11N9R5acmdY8GSp-6Ez2nTNW36WH88zDO/preview', 'DESTINY-MAAN ATKEYA')">PLAY NOW</button></td>
+            </tr>
+            <tr>
+                <td>AKHRI ISHQ</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/1KGJrurZqqym9rcfWFlDE2eI5uZFFDdh5/preview', 'AKHRI ISHQ')">PLAY NOW</button></td>
+            </tr>
+
+                <td>PHIRSE NAINA</td>
+                <td><button class="play-btn" onclick="playSong('https://drive.google.com/file/d/1t5BC3QIfuuSX1ttT_YVTEFi0CVvQPHzP/preview', 'PHIRSE NAINA')">PLAY NOW</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function playSong(driveLink, title) {
+            const player = document.getElementById('mainPlayer');
+            const titleDisplay = document.getElementById('videoTitle');
+            
+            // Set the new source
+            player.src = driveLink;
+            titleDisplay.innerText = "Now Playing: " + title;
+            
+            // Smoothly scroll back to the player so you can see the video
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>
