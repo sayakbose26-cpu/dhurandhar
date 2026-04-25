@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHURANDHAR | MISSION LOG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blood-red: #bc0000;
+            --dark-black: #050505;
+            --metal-grey: #333;
+        }
+
+        body {
+            background-color: var(--dark-black);
+            background-image: 
+                linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 4px, 3px 100%; /* CRT Scanline Effect */
+            color: #e0e0e0;
+            font-family: 'Teko', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+            text-transform: uppercase;
+            overflow-x: hidden;
+        }
+
+        /* Red vignette around the screen */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, transparent 60%, rgba(188, 0, 0, 0.15) 100%);
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        h1 {
+            font-family: 'Stalinist One', cursive;
+            font-size: 3.5rem;
+            color: var(--blood-red);
+            text-shadow: 5px 5px 0px #000;
+            letter-spacing: 8px;
+            margin-bottom: 50px;
+            text-align: center;
+            border-bottom: 4px double var(--blood-red);
+            padding-bottom: 10px;
+            animation: glitch 1s infinite alternate;
+        }
+
+        table {
+            width: 95%;
+            max-width: 1000px;
+            border-collapse: collapse;
+            background: rgba(10, 10, 10, 0.95);
+            border: 1px solid var(--metal-grey);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+            z-index: 5;
+        }
+
+        th {
+            background: var(--blood-red);
+            color: white;
+            font-size: 2rem;
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #000;
+        }
+
+        td {
+            padding: 25px;
+            border-bottom: 1px solid var(--metal-grey);
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Hover effect: Red target bar */
+        tr:hover td {
+            color: #fff;
+            background: linear-gradient(90deg, rgba(188,0,0,0.2) 0%, transparent 100%);
+        }
+
+        /* Play Now Button Styling */
+        .play-btn {
+            text-decoration: none;
+            color: #fff;
+            background: transparent;
+            padding: 10px 30px;
+            border: 2px solid var(--blood-red);
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); /* Tactical slanted shape */
+        }
+
+        .play-btn:hover {
+            background: var(--blood-red);
+            box-shadow: 0 0 25px var(--blood-red);
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        /* Animation for "Glitch" title */
+        @keyframes glitch {
+            0% { transform: skew(0deg); }
+            20% { transform: skew(-2deg); opacity: 0.8; }
+            50% { transform: skew(2deg); text-shadow: -2px 0 red, 2px 0 blue; }
+            80% { transform: skew(0deg); }
+            100% { transform: skew(1deg); }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; letter-spacing: 2px; }
+            td { font-size: 1.2rem; padding: 15px; }
+            .play-btn { padding: 5px 15px; font-size: 1rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DHURANDHAR: PART 2</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">CLASSIFIED MISSION LOG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01. THe BURNT MEMORY</td>
+                <td><a href="chapter1.html" class="play-btn">EXECUTE</a></td>
+            </tr>
+            <tr>
+                <td>02. LUCIFER</td>
+                <td><a href="chapter2.html" class="play-btn">EXECUTE</a></td>
+            </tr>
+            <tr>
+                <td>03. GHOSTS FROM THE PAST</td>
+                <td><a href="chapter3.html" class="play-btn">EXECUTE</a></td>
+            </tr>
+            <tr>
+                <td>04. TRIAL BY FIRE</td>
+                <td><a href="chapter4.html" class="play-btn">EXECUTE</a></td>
+            </tr>
+            <tr>
+                <td>05. UNKNOWN MEN</td>
+                <td><a href="chapter5.html" class="play-btn">EXECUTE</a></td>
+            </tr>
+            <tr>
+                <td>06. THE REVENGE</td>
+                <td><a href="chapter6.html" class="play-btn">EXECUTE</a></td>
+            </tr>
+            <tr>
+                <td>07. DHURANDHAR</td>
+                <td><a href="chapter7.html" class="play-btn">EXECUTE</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
