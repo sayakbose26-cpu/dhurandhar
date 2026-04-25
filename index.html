@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRONT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<style>
+    :root {
+        --primary-red: #ff0000;
+        --dark-red: #7a0505;
+        --gold: #ffcc00;
+        --glass: rgba(0, 0, 0, 0.7);
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background-color: #000;
+        /* Enhanced gradient overlay for more "pop" */
+        background-image: 
+            radial-gradient(circle at center, rgba(178, 7, 16, 0.2) 0%, transparent 70%),
+            linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%),
+            url('https://www.bollywoodhungama.com/wp-content/uploads/2025/06/Dhurandhar-cover-image129.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    header {
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center; /* Centered for mobile friendliness */
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        border-bottom: 2px solid var(--primary-red);
+    }
+
+    header nav {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.30rem;
+        text-transform: uppercase;
+        background: linear-gradient(45deg, var(--dark-red), var(--primary-red));
+        padding: 6px 15px;
+        border-radius: 4px;
+        transition: 0.3s;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    h1 {
+        font-family: 'Argerian', sans-serif;
+        font-size: clamp(2.5rem, 10vw, 5.5rem); 
+        margin: 120px 0 20px 0; 
+        text-transform: uppercase;
+        text-align: center;
+        background: linear-gradient(180deg, #fff 10%, var(--primary-red) 50%, var(--dark-red) 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.6));
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+        from { filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.4)); }
+        to { filter: drop-shadow(0 0 25px rgba(255, 0, 0, 0.9)); }
+    }
+
+    form {
+        max-width: 500px;
+        width: 85%;
+        padding: 40px 20px;
+        background: var(--glass);
+        border: 2px solid var(--primary-red);
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 0 40px rgba(178, 7, 16, 0.5);
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: clamp(0.8rem, 4vw, 1.1rem);
+        color: var(--gold);
+        text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        letter-spacing: 3px;
+        margin-bottom: 15px;
+    }
+
+    .tagline {
+        font-size: clamp(1.2rem, 5vw, 1.8rem);
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px #000;
+    }
+
+    button {
+        background: linear-gradient(to right, #b20710, #ff0000, #b20710);
+        background-size: 200% auto;
+        color: white;
+        border: none;
+        padding: 15px 40px;
+        font-size: 1.1rem;
+        font-weight: 900;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        animation: pulse 1.5s infinite;
+    }
+
+    button:hover {
+        background-position: right center;
+        transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(255, 0, 0, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+    }
+
+    h3 {
+        font-size: 0.8rem;
+        margin: 10px 0;
+        color: #ccc;
+        border-bottom: 1px solid rgba(255,0,0,0.3);
+        display: inline-block;
+        padding-bottom: 3px;
+        width: 100%;
+    }
+    @media (max-width: 768px) {
+        body { background-attachment: scroll; }
+        form { padding: 30px 15px; }
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="login page.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login page.html">Sign in</a>
+            <a href="form.html">Sign up</a>
+        </nav>
+    </header>
+
+    <h1>DHURANDHAR HUB</h1>
+
+    <form action="login page.html">
+        <h2>Ab Bigarne ka waqt agaya</h2>
+        <div class="tagline">HAUSLA ENDHEN BADLA</div>
+
+        <button>GET STARTED</button>
+
+        <h3>Director: Aditya Dhar</h3>
+        <h3>Genres: Action, Mystery, Thriller</h3>
+        <h3>Country: India</h3>
+    </form>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="AARI AARI – Dhurandhar 2 _ Ran-Downringtone.com.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const audio = document.getElementById('bgMusic');
+        const startMusic = () => {
+            audio.play().catch(err => console.log("Audio blocked: ", err));
+        };
+        window.addEventListener('click', startMusic, { once: true });
+        window.addEventListener('keydown', startMusic, { once: true });
+    </script>
+</body>
+
+</html>
